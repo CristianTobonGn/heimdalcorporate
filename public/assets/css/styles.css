@@ -1,0 +1,615 @@
+/* Importar fuentes custom*/
+@font-face{
+	font-family: "yanone";
+	src: url("fonts/yanone.ttf");
+}
+
+@font-face{
+	font-family: "finger";
+	src: url("fonts/finger.ttf");
+}
+
+/*Generales*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: "yanone", Arial, Helvetica;
+	font-size: 20px;
+	background: url("../img/pattern.png");
+	background-attachment: fixed;
+}
+
+.clearfix{
+	float:none;
+	clear:both;
+}
+
+.example-form {
+	width: 80%;
+	height: auto;
+  }
+  
+  .example-full-width {
+	width: 100%;
+	height: 60px;
+	background-color: white; 
+	color:black;
+  }
+
+  .example-button {
+	  width: 100%;
+	  color:black;
+	  background-color: white;
+  }
+  .example-buttonn {
+	height: 60px;
+	width:68% !important;
+	background-color: white;
+	color:black;
+}
+ 
+
+  header{
+	display: block;
+	width: 100%;
+	height: 200px;
+	background: black;
+	z-index:5;
+	text-transform: uppercase;
+}
+
+header div img{
+	width:75%;
+	height:200px;
+}
+
+#logo{
+	width:20%;
+	float:left;
+	z-index:5;
+}
+#login{
+	float:left;
+	width: 80%;
+	background:black ;
+	text-align:left !important;
+	
+}
+#login nav{
+
+	margin-left: 90% !important;
+	
+}
+.nav-link{
+
+	background:black ;
+	text-align:right;
+	margin: 0px 0px 0px -2% !important;
+	color: #686f74 !important;
+	
+}
+.nav-link:hover{
+	background:black ;
+	text-align:right;
+	margin: 0px 0px 0px -2% !important;
+	color: white !important;
+	text-decoration: underline;
+	
+}
+
+.navbar-toggler  {
+	background:black !important;
+	color:white !important;
+}
+
+.navbar-toggler-icon {
+	background-image: url(../img/barras.png) !important;
+
+}
+
+
+#menu{
+	width:80%;
+	float:left;
+	
+}
+
+#menu nav ul{
+	text-align:center;
+	margin-top: 2%;
+}
+
+#menu nav ul li{
+	margin-left: 60px;
+}
+
+#menu nav ul li a{
+	font-size: 30px;
+}
+.carousel {
+	margin-bottom: 5% !important;
+    /* height: 100%; */
+    width: 100% !important;
+    /* padding: initial; */
+	z-index:4;
+}
+
+.ir-arriba {
+	display:none;
+	background: white;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
+
+.arriba {
+
+	background: white;
+
+}
+
+/*Barra de navegacion / cabecera*/
+
+
+/*Logotipo*/
+
+#logo{
+	font-family: "finger";
+	font-size: 30px;
+}
+
+#logo a{
+	transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover{
+	background: transparent;
+	color: black;
+	transform:scale(1.50,1.50);
+}
+
+/*Contenedor principal*/
+
+#content{
+	min-height: 600px;
+	max-height: auto;
+	height: auto;
+	width: 100%;
+	top:10%;
+	margin: 0px auto;
+	border-left:1px  #b7b7b7;
+	border-right:1px  #b7b7b7;
+	background: rgb(5 5 5 / 0.50);
+	padding-top: -200px;
+}
+
+/*Pie de pagina*/
+footer{
+	width: 100%;
+	padding-top: 15px;
+	color: rgba(0, 0, 0, 0.5);
+	z-index: 7;
+	
+	background-color: black;
+	height: 250px;
+}
+
+
+/*Sobre mi*/
+#title{
+	width: 70%;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+
+#title h1{
+	font-family: "finger";
+	font-size: 60px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+#title h2{
+	font-size: 25px;
+	color: gray;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+article.about{
+	width: 70%;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	font-size: 23px;
+}
+
+.about h2{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.about p{
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-align: justify;
+}
+
+/*Sección con formulario*/
+
+.container{
+	padding: 50px;
+	padding-top: 10px;
+	min-height: 1350px;
+}
+
+.container .image{
+	float: left;
+	width: 47%;
+}
+
+.container .image img{
+	width: 100%;
+}
+
+.container .data{
+	float: left;
+	width: 48%;
+	margin-left:30px;
+}
+
+.container h2{
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+form{
+	width: 80%;
+}
+
+form label{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form form-field,
+form textarea{
+	width: 100%;
+	padding: 5px;
+	background-color: white;
+}
+
+form button,
+form input[type="submit"],
+.button-edit,
+.button-delete{
+	display: block;
+	font-size: 17px;
+	padding: 10px;
+	margin-top: 15px; 
+	color:white;
+	background: rgba(53, 103, 164, 1);
+	border: 1px solid rgba(13, 67, 133, 1);
+	cursor: pointer;
+}
+
+.button-edit,
+.button-delete{
+	width: 30%;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.button-edit{
+	background: orange;
+	border: none;
+}
+
+.button-delete{
+	background: red;
+	border: none;
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+	background: rgba(53, 103, 164, 0.8);
+	border: 1px solid rgba(13, 67, 133, 1);
+}
+
+form input[disabled]{
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.form_error{
+	font-size: 13px;
+	padding: 3px;
+	background: red;
+	color:white;
+	margin-left: 5px;
+}
+
+.message{
+	width: 50%;
+	padding: 5px;
+	border: 1px solid #eee;
+}
+
+.success{
+	background: green;
+	color: white;
+}
+
+.message a{
+	color: white;
+}
+
+.failed{
+	background: red;
+	color: white;
+}
+
+/*Pagina de proyectos*/
+
+.project{
+	list-style: none;
+	display: block;
+	float: left;
+	width: 28%;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+.project .image{
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+}
+
+.project img{
+	width: 100%;
+}
+
+.project a{
+	text-decoration: none;
+	color: black;
+}
+.carousel-inner {top:39px;}
+.confirm{
+	display: block;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.galeria {
+width: 100%;
+height: 200px;
+
+}
+
+.form{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+.qr{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+.container-galeria {
+	width: 28%;
+	height: 200px;
+	float: left;
+	margin: 9px 30px 29px 30px;
+	}
+
+.galeriacarrusel{
+width: 100% !important;
+height: 500px !important;
+
+}
+.u-wrapper{
+	margin-top:550px;
+	clear:both;
+	background-color: black;
+	color:white;
+}
+.u-wrapper h3{
+	padding-top:60px;
+}
+
+.u-wrapper form{
+margin-left: 20%;
+}
+
+
+.container-info{
+	margin-left: 10%;
+	margin-top: 20px;
+	width: 60%;
+}
+
+.tag-info{
+width: 30%;	
+font-weight:800;
+}
+
+.footers{
+	width:33%;
+	float:left;
+	margin-left: -20%;
+	color: #686f74;
+}
+
+.footerss{
+	width:33%;
+	float:left;
+	margin-left: 25%;
+	color: #686f74;
+}
+
+.footersss{
+	width:32%;
+	float:left;
+	margin-left: -3%;
+	margin-top: 4%;
+	color: #686f74;
+}
+
+.container-redes{
+
+	width: 20%;
+	float: left;
+	margin: 5px 5px 5px 5px;
+}
+
+.container-redes img{
+	z-index: 10;
+	width: 100%;
+	height: 50px;
+	
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+video {width:85%; height:400px}
+
+.btn{
+	margin-left: 140%;
+}
+.webcam-image {
+    width: 120%;
+    height: 400px;
+}
+
+.margbtn{
+	margin: 0 5px 0 5px;
+}
+
+.congaleria{
+	width: 100%; 
+	margin-left:4%;
+}
+
+
+.videoscan{
+	top:0;
+	visibility: hidden;
+	left: 0;
+	opacity: 0;
+}
+
+.scanface{
+	float: left;
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width:1366px){
+	#menu nav ul li a {
+		font-size: 23px;
+	}
+	#menu nav ul {
+		text-align: center;
+		margin-left: 7%;
+		margin-top: 2%;
+	}
+	#login nav {
+		margin-left: 82% !important;
+	}
+	.congaleria{
+	width: 100%; 
+	margin-left:1%;
+	}
+	.webcam-image {
+		width: 100%;
+		height: 300px;
+	}
+}
+@media (max-width:890px){
+	#logo {
+		width: 33%;
+		float: left;
+		z-index: 5;
+	}
+	header div img {
+    width: 100%;
+    height: 200px;
+	}
+	#login {
+		float: left;
+		width: 60%;
+		background: black;
+		text-align: left !important;
+	}
+	#menu {
+		width: 50%;
+		float: left;
+		margin-top: 10%;
+	}
+	.congaleria {
+		width: 100%;
+		margin-left: 4%;
+		margin-top: 15%;
+	}
+	.container-galeria {
+		width: 78%;
+		height: 200px;
+		float: left;
+		margin: 9px 30px 29px 30px;
+	}
+	#menu nav ul li {
+    height: 57px;
+	margin-left: -13px;
+	}
+	#menu nav ul li a {
+		font-size: 21px;
+	}
+	#login nav {
+		margin-left: 72% !important;
+	}
+	#menu nav ul {
+		text-align: center;
+	}
+	.container {
+    padding: 50px;
+    padding-top: 10px;
+    min-height: 1300px;
+	}
+	.webcam-image {
+		width: 128%;
+		height: 200px;
+	}
+	video {
+		width: 125%;
+		height: 200px;
+	}
+}
+
+@media (max-width:1600px) {
+	#menu nav ul li a {
+		font-size: 26px;
+	}
+}
+
